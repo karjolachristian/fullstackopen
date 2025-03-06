@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Käyttäjä
     participant Selain
@@ -10,4 +11,3 @@ sequenceDiagram
     Tietokanta-->>Palvelin: Vahvistaa tallennuksen palvelimella
     Palvelin-->>Selain: Vahvistaa muistiinpanon lisäyksen sivulle
     Selain-->>Käyttäjä: Päivittää sivun ja näyttää uuden muistiinpanon käyttäjille
-
