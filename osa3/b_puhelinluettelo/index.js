@@ -4,7 +4,6 @@ import { fileURLToPath } from "url";
 import fs from "fs";
 import morgan from "morgan";
 import cors from "cors";
-app.use(cors());
 
 const app = express();
 const port = 3001
@@ -14,6 +13,7 @@ const __dirname = path.dirname(__filename);
 const dbPath = path.join(__dirname, "db.json");
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/api/persons", (req, res) => {
     res.sendFile(dbPath);
