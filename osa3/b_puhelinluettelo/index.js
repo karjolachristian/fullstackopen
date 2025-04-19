@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import fs from "fs";
 import morgan from "morgan";
 import cors from "cors";
+app.use(cors());
 
 const app = express();
 const port = 3001
