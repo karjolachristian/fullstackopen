@@ -1,0 +1,15 @@
+### HTTP 204 on success
+PUT http://localhost:3001/api/blogs/5a422a851b54a676234d17f7
+content-type: application/json
+
+{
+    "likes": 99999
+}
+
+### HTTP 400 on failure
+PUT http://localhost:3001/api/blogs/omena
+content-type: application/json
+
+{
+    "likes": 99999
+}

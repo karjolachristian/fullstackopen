@@ -1,0 +1,79 @@
+### create new
+POST http://localhost:3001/api/blogs
+content-type: application/json
+
+{
+    "title": "abc",
+    "author": "xyz",
+    "url": "www",
+    "likes": 10
+}
+
+### missing 1/4 fields should fail with 400
+POST http://localhost:3001/api/blogs
+content-type: application/json
+
+{
+    "author": "xyz",
+    "url": "www",
+    "likes": 10
+}
+
+### missing 1/4 fields should fail with 400
+POST http://localhost:3001/api/blogs
+content-type: application/json
+
+{
+    "title": "abc",
+    "url": "www",
+    "likes": 10
+}
+
+### missing 1/4 fields should fail with 400
+POST http://localhost:3001/api/blogs
+content-type: application/json
+
+{
+    "title": "abc",
+    "author": "xyz",
+    "likes": 10
+}
+
+### missing "likes" fields should succeed with 201
+POST http://localhost:3001/api/blogs
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY2MTY2M2E4M2JiZjNmMDEzZGMzYmNjOCIsImlhdCI6MTcxMjc0Njk4MX0.h9NNEC9syhaV8i3lGJkkGyZz-iQ-is-r_HlSMDsIk4Y
+
+{
+    "title": "abc",
+    "author": "xyz",
+    "url": "www"
+}
+
+### create user
+POST http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "username": "aaa",
+    "name": "Aa A",
+    "password": "aaa"
+}
+
+### login as root:toor
+POST http://localhost:3001/api/login
+content-type: application/json
+
+{
+    "username": "root",
+    "password": "toor"
+}
+
+### login as aaa:aaa
+POST http://localhost:3001/api/login
+content-type: application/json
+
+{
+    "username": "aaa",
+    "password": "aaa"
+}

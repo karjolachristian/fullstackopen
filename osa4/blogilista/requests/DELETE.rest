@@ -1,0 +1,6 @@
+### delete existing should succeed with 204
+DELETE http://localhost:3001/api/blogs/661667985540086106057faf
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFhYSIsImlkIjoiNjYxNjY3NjI1NTQwMDg2MTA2MDU3ZmE2IiwiaWF0IjoxNzEyNzU4MjMyfQ.w5P5hUER5JoKfNwVnipTF_xPm20QzGl4pxbMFnPk8Mk
+
+### delete non-existing should fail with 400
+DELETE http://localhost:3001/api/blogs/omena
