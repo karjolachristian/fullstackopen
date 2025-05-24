@@ -1,0 +1,50 @@
+.feedback,
+.error {
+    color: green;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red
+}
+
+nav>a {
+    padding: 5px;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+button.login {
+    margin-left: 0.5em;
+}
+
+li:nth-child(even),
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+th {
+    background-color: gray;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+table td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+ul li {
+    padding: 2px;
+}
